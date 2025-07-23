@@ -1,0 +1,101 @@
+body {
+    background-color: #f0efe9;
+    color: #3E2C21;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff;
+    font-size: 20px;
+  }
+  
+  header h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  header p {
+    font-size: 22px;
+    max-width: 800px;
+    margin: auto;
+    color: #6A4F4B;
+  }
+  
+  .hero {
+    background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 20px;
+  }
+  
+  .content-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 20px;
+    text-align: left;
+  }
+  
+  .content-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .content-section p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #5B4638;
+  }
+  
+  .content-section img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .profile-photo {
+    width: 300px;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+  }
+  
+  footer {
+    text-align: center;
+    background-color: #3E2C21;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 18px;
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #8b5a2b;
+    color: #fff;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+  
+  .dotted-border {
+    border: 2px dotted #8b5a2b;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff9f5;
+  }
+  
