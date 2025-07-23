@@ -1,101 +1,184 @@
+/* 🌞 Light mode (default) */
 body {
-    background-color: #f0efe9;
-    color: #3E2C21;
-    font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    text-align: center;
-    padding: 80px 20px;
-    background-color: #fff;
-    font-size: 20px;
-  }
-  
-  header h1 {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  header p {
-    font-size: 22px;
-    max-width: 800px;
-    margin: auto;
-    color: #6A4F4B;
-  }
-  
-  .hero {
-    background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2') no-repeat center center/cover;
-    height: 600px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #fff;
-    font-size: 2.5em;
-    font-weight: bold;
-    padding: 20px;
-  }
-  
-  .content-section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 100px 20px;
-    text-align: left;
-  }
-  
-  .content-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .content-section p {
-    font-size: 20px;
-    line-height: 1.6;
-    color: #5B4638;
-  }
-  
-  .content-section img {
-    width: 100%;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-  
-  .profile-photo {
-    width: 300px;
-    margin: 20px auto;
-    display: block;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 12px;
-    background-color: #fff;
-  }
-  
-  footer {
-    text-align: center;
-    background-color: #3E2C21;
-    color: #fff;
-    padding: 40px 20px;
-    font-size: 18px;
-  }
-  
-  .button {
-    display: inline-block;
-    background-color: #8b5a2b;
-    color: #fff;
-    padding: 14px 28px;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 5px;
-    margin-top: 30px;
-  }
-  
-  .dotted-border {
-    border: 2px dotted #8b5a2b;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #fff9f5;
-  }
-  
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfcf9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: #fff;
+  padding: 15px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
+.navbar .button {
+  font-size: 16px;
+  padding: 10px 16px;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1556761175-4b46a572b786') no-repeat center center/cover;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-inner {
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 900px;
+}
+.typing-text {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding: 80px 10%;
+}
+.light-bg {
+  background-color: #faf8f4;
+}
+.about-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 40px auto 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+#contact h2,
+#contact p {
+  color: #a86c4b;
+}
+
+.services {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+.services li {
+  padding: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin-top: 20px;
+}
+input, textarea {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+}
+.button {
+  background-color: #a86c4b;
+  color: white;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.button:hover {
+  background-color: #8b6845;
+}
+#thank-you-modal {
+  background-color: #a86c4b;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2e2e2e;
+  color: white;
+}
+
+/* 🌙 Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #f2f2f2;
+}
+.dark-mode .navbar {
+  background-color: #1e1e1e;
+}
+.dark-mode .navbar a {
+  color: #f2f2f2;
+}
+.dark-mode .section {
+  background-color: #1a1a1a;
+}
+.dark-mode .light-bg {
+  background-color: #1a1a1a;
+}
+.dark-mode h2,
+.dark-mode p,
+.dark-mode li,
+.dark-mode .typing-text {
+  color: #f2f2f2;
+}
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #222;
+  color: #f2f2f2;
+  border: 1px solid #555;
+}
+.dark-mode .button {
+  background-color: #f2f2f2;
+  color: #1e1e1e;
+}
+.dark-mode .button:hover {
+  background-color: #cccccc;
+}
+.dark-mode #thank-you-modal {
+  background-color: #2a2a2a;
+  color: #f2f2f2;
+}
+.dark-mode footer {
+  background-color: #000;
+  color: #ccc;
+}
+/* 🌞 Light mode styles for the footer */
